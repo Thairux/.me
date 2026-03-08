@@ -173,8 +173,8 @@ img {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.25rem;
-  background: rgba(255, 250, 245, 0.55);
-  border: 1px solid var(--border);
+  background: rgba(255, 253, 250, 0.92);
+  border: 1px solid rgba(111, 67, 48, 0.12);
   border-radius: 999px;
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(16px);
@@ -183,7 +183,18 @@ img {
 @media (prefers-color-scheme: dark) {
   .site-header-inner {
     background: rgba(33, 20, 14, 0.62);
+    border-color: var(--border);
   }
+}
+
+:root[data-theme="dark"] .site-header-inner {
+  background: rgba(33, 20, 14, 0.62);
+  border-color: var(--border);
+}
+
+:root[data-theme="light"] .site-header-inner {
+  background: rgba(255, 253, 250, 0.92);
+  border-color: rgba(111, 67, 48, 0.12);
 }
 
 .brand {
@@ -835,30 +846,60 @@ img {
   align-items: center;
   gap: 1rem;
   padding: 1.25rem 1.5rem;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(111, 67, 48, 0.12);
   border-radius: 1.5rem;
-  background: rgba(255, 250, 245, 0.45);
+  background: rgba(255, 252, 248, 0.88);
   backdrop-filter: blur(14px);
 }
 
 @media (prefers-color-scheme: dark) {
   .site-footer-inner {
     background: rgba(33, 20, 14, 0.58);
+    border-color: var(--border);
   }
+
+  .footer-title,
+  .footer-copy,
+  .footer-links a {
+    color: inherit;
+  }
+}
+
+:root[data-theme="dark"] .site-footer-inner {
+  background: rgba(33, 20, 14, 0.58);
+  border-color: var(--border);
+}
+
+:root[data-theme="light"] .site-footer-inner {
+  background: rgba(255, 252, 248, 0.88);
+  border-color: rgba(111, 67, 48, 0.12);
 }
 
 .footer-title {
   margin: 0;
   font-weight: 800;
+  color: var(--coffee-800);
 }
 
 .footer-copy {
   margin: 0.25rem 0 0;
+  color: var(--coffee-700);
 }
 
 .footer-links a {
+  color: var(--coffee-800);
   font-weight: 700;
   text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--gold-500);
+}
+
+:root[data-theme="dark"] .footer-title,
+:root[data-theme="dark"] .footer-copy,
+:root[data-theme="dark"] .footer-links a {
+  color: inherit;
 }
 
 .contact-actions {
