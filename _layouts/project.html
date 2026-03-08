@@ -9,6 +9,9 @@ layout: default
     {% if page.description %}
       <p class="project-description">{{ page.description }}</p>
     {% endif %}
+    {% if page.forked_from %}
+      <p class="project-meta-note">Fork lineage: <a href="{{ page.forked_from }}" target="_blank" rel="noopener noreferrer">{{ page.forked_from }}</a></p>
+    {% endif %}
   </header>
 
   <div class="project-content">

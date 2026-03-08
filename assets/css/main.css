@@ -525,6 +525,12 @@ img {
   line-height: 1.2;
 }
 
+.project-card h3 {
+  margin: 0 0 0.7rem;
+  line-height: 1.2;
+  font-size: 1.45rem;
+}
+
 .feature-card-top {
   display: flex;
   align-items: center;
@@ -600,6 +606,15 @@ img {
   overflow: hidden;
 }
 
+.project-title-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.project-title-link:hover {
+  color: var(--gold-500);
+}
+
 .project-visual {
   position: relative;
   min-height: 9.5rem;
@@ -669,6 +684,13 @@ img {
     linear-gradient(135deg, rgba(229, 201, 119, 0.12), rgba(199, 141, 139, 0.2)),
     radial-gradient(circle at 68% 28%, rgba(255, 255, 255, 0.24), transparent 18%),
     linear-gradient(160deg, rgba(85, 53, 38, 0.88), rgba(28, 18, 13, 0.96));
+}
+
+.project-visual-hosq {
+  background:
+    linear-gradient(135deg, rgba(199, 141, 139, 0.12), rgba(229, 201, 119, 0.14)),
+    radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.24), transparent 18%),
+    linear-gradient(160deg, rgba(59, 40, 31, 0.9), rgba(18, 12, 9, 0.96));
 }
 
 .project-visual-notes {
@@ -741,6 +763,11 @@ img {
   gap: 0.75rem;
   flex-wrap: wrap;
   font-size: 0.96rem;
+}
+
+.project-meta-note {
+  margin: 0;
+  color: var(--text-muted);
 }
 
 .post-content,
@@ -832,6 +859,10 @@ img {
 .footer-links a {
   font-weight: 700;
   text-decoration: none;
+}
+
+.contact-actions {
+  margin-top: 1.2rem;
 }
 
 @keyframes glow-float {

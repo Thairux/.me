@@ -12,6 +12,11 @@ social_links:
   github: Thairux
   twitter: thairux
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
