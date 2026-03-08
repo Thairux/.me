@@ -1,60 +1,21 @@
-# Site Settings
-title: "Thairux Portfolio"
-description: "Personal portfolio showcasing projects, skills, and experience"
-author: "Thairux"
-url: "https://thairux.github.io"
+title: Thairux
+description: Personal portfolio website
 baseurl: ""
+url: "https://thairux.github.io/.me"
+theme: minima
 
-# Build Settings
-markdown: kramdown
-highlighter: rouge
+author:
+  name: Thairux
+  email: thairux@example.com
+
+social_links:
+  github: Thairux
+  twitter: thairux
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
-
-# Collections
-collections:
-  projects:
-    output: true
-  posts:
-    output: true
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-
-# Navigation
-navigation:
-  - name: "About"
-    url: "#about"
-  - name: "Projects"
-    url: "#projects"
-  - name: "Skills"
-    url: "#skills"
-  - name: "Experience"
-    url: "#experience"
-  - name: "Education"
-    url: "#education"
-  - name: "Contact"
-    url: "#contact"
-  - name: "Blog"
-    url: "/blog"
-
-# Social Links
-social:
-  github: "https://github.com/Thairux"
-  linkedin: ""
-  twitter: ""
-  email: ""
-
-# Theme
-theme: "minimal"
+  - jekyll-paginate
+  - jekyll-seo-tag

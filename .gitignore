@@ -2,11 +2,5 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-vendor/
-.bundle/
 *.gem
-*.rbc
-.DS_Store
-*.swp
-*.swo
-*~
+Gemfile.lock
