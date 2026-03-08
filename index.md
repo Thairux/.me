@@ -171,10 +171,14 @@ title: Home
     </article>
     <article class="surface-card">
       <h2>Reach out</h2>
-      <p>If you'd like to talk about a project, collaboration, or role, the easiest place to start is through GitHub or Twitter.</p>
+      <p>If you'd like to talk about a project, collaboration, or role, the easiest place to start is through GitHub, Twitter, or any of the social links connected to this site.</p>
       <div class="hero-actions contact-actions">
-        <a href="https://github.com/Thairux" class="button-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://twitter.com/thairux" class="button-secondary" target="_blank" rel="noopener noreferrer">Twitter</a>
+        {% if site.social_profiles.github != blank %}
+          <a href="{{ site.social_profiles.github }}" class="button-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+        {% endif %}
+        {% if site.social_profiles.twitter != blank %}
+          <a href="{{ site.social_profiles.twitter }}" class="button-secondary" target="_blank" rel="noopener noreferrer">Twitter</a>
+        {% endif %}
         <a href="{{ '/blog/' | relative_url }}" class="button-secondary">Read the Blog</a>
       </div>
     </article>

@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines }}">
+  <meta name="theme-color" content="#8b5d45">
   <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+  <link rel="shortcut icon" href="{{ '/assets/favicon.svg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
 </head>
@@ -53,8 +56,27 @@
         <p class="footer-copy">Built with love by Peter Thairu Muigai.</p>
       </div>
       <div class="footer-links">
-        <a href="https://github.com/{{ site.social_links.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://twitter.com/{{ site.social_links.twitter }}" target="_blank" rel="noopener noreferrer">Twitter</a>
+        {% if site.social_profiles.github != blank %}
+          <a href="{{ site.social_profiles.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+        {% endif %}
+        {% if site.social_profiles.twitter != blank %}
+          <a href="{{ site.social_profiles.twitter }}" target="_blank" rel="noopener noreferrer">Twitter</a>
+        {% endif %}
+        {% if site.social_profiles.instagram != blank %}
+          <a href="{{ site.social_profiles.instagram }}" target="_blank" rel="noopener noreferrer">Instagram</a>
+        {% endif %}
+        {% if site.social_profiles.facebook != blank %}
+          <a href="{{ site.social_profiles.facebook }}" target="_blank" rel="noopener noreferrer">Facebook</a>
+        {% endif %}
+        {% if site.social_profiles.threads != blank %}
+          <a href="{{ site.social_profiles.threads }}" target="_blank" rel="noopener noreferrer">Threads</a>
+        {% endif %}
+        {% if site.social_profiles.discord != blank %}
+          <a href="{{ site.social_profiles.discord }}" target="_blank" rel="noopener noreferrer">Discord</a>
+        {% endif %}
+        {% if site.social_profiles.steam != blank %}
+          <a href="{{ site.social_profiles.steam }}" target="_blank" rel="noopener noreferrer">Steam</a>
+        {% endif %}
       </div>
     </div>
   </footer>
