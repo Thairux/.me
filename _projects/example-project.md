@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Example Project"
 description: "This is an example project to demonstrate the portfolio structure."
 technologies:

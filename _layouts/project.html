@@ -3,36 +3,35 @@ layout: default
 ---
 
 <article class="project-detail">
-  <div class="container">
-    <header class="project-header">
-      <h1>{{ page.title }}</h1>
-      {% if page.description %}
-        <p class="project-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
-    
-    <div class="project-content">
-      {{ content }}
-    </div>
-    
-    {% if page.technologies %}
-      <div class="project-technologies">
-        <h3>Technologies Used</h3>
-        <div class="technologies">
-          {% for tech in page.technologies %}
-            <span class="tech-tag">{{ tech }}</span>
-          {% endfor %}
-        </div>
-      </div>
+  <header class="project-header">
+    <p class="section-eyebrow">Case Study</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="project-description">{{ page.description }}</p>
     {% endif %}
-    
-    <div class="project-links">
-      {% if page.github %}
-        <a href="{{ page.github }}" class="project-link" target="_blank">View on GitHub</a>
-      {% endif %}
-      {% if page.demo %}
-        <a href="{{ page.demo }}" class="project-link" target="_blank">Live Demo</a>
-      {% endif %}
+  </header>
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  {% if page.technologies %}
+    <div class="project-technologies">
+      <h3>Technologies Used</h3>
+      <div class="technologies">
+        {% for tech in page.technologies %}
+          <span class="tech-tag">{{ tech }}</span>
+        {% endfor %}
+      </div>
     </div>
+  {% endif %}
+
+  <div class="project-links">
+    {% if page.github %}
+      <a href="{{ page.github }}" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    {% endif %}
+    {% if page.demo %}
+      <a href="{{ page.demo }}" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+    {% endif %}
   </div>
 </article>
