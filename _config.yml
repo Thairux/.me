@@ -1,0 +1,60 @@
+# Site Settings
+title: "Thairux Portfolio"
+description: "Personal portfolio showcasing projects, skills, and experience"
+author: "Thairux"
+url: "https://thairux.github.io"
+baseurl: ""
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Collections
+collections:
+  projects:
+    output: true
+  posts:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Navigation
+navigation:
+  - name: "About"
+    url: "#about"
+  - name: "Projects"
+    url: "#projects"
+  - name: "Skills"
+    url: "#skills"
+  - name: "Experience"
+    url: "#experience"
+  - name: "Education"
+    url: "#education"
+  - name: "Contact"
+    url: "#contact"
+  - name: "Blog"
+    url: "/blog"
+
+# Social Links
+social:
+  github: "https://github.com/Thairux"
+  linkedin: ""
+  twitter: ""
+  email: ""
+
+# Theme
+theme: "minimal"

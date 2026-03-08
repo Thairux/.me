@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. All rights reserved.</p>
+    <div class="social-links">
+      {% if site.social.github %}
+        <a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+      {% endif %}
+      {% if site.social.linkedin %}
+        <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      {% endif %}
+      {% if site.social.twitter %}
+        <a href="{{ site.social.twitter }}" target="_blank" rel="noopener noreferrer">Twitter</a>
+      {% endif %}
+    </div>
+  </div>
+</footer>
