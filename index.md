@@ -171,13 +171,25 @@ title: Home
     </article>
     <article class="surface-card">
       <h2>Reach out</h2>
-      <p>If you'd like to talk about a project, collaboration, or role, the easiest place to start is through GitHub, Twitter, or any of the social links connected to this site.</p>
+      <p>If you'd like to talk about a project, collaboration, or role, you can reach me through GitHub, Twitter, or the rest of the social profiles linked here.</p>
       <div class="hero-actions contact-actions">
         {% if site.social_profiles.github != blank %}
           <a href="{{ site.social_profiles.github }}" class="button-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
         {% endif %}
         {% if site.social_profiles.twitter != blank %}
           <a href="{{ site.social_profiles.twitter }}" class="button-secondary" target="_blank" rel="noopener noreferrer">Twitter</a>
+        {% endif %}
+        {% if site.social_profiles.instagram != blank %}
+          <a href="{{ site.social_profiles.instagram }}" class="button-secondary" target="_blank" rel="noopener noreferrer">Instagram</a>
+        {% endif %}
+        {% if site.social_profiles.facebook != blank %}
+          <a href="{{ site.social_profiles.facebook }}" class="button-secondary" target="_blank" rel="noopener noreferrer">Facebook</a>
+        {% endif %}
+        {% if site.social_profiles.threads != blank %}
+          <a href="{{ site.social_profiles.threads }}" class="button-secondary" target="_blank" rel="noopener noreferrer">Threads</a>
+        {% endif %}
+        {% if site.social_profiles.steam != blank %}
+          <a href="{{ site.social_profiles.steam }}" class="button-secondary" target="_blank" rel="noopener noreferrer">Steam</a>
         {% endif %}
         <a href="{{ '/blog/' | relative_url }}" class="button-secondary">Read the Blog</a>
       </div>
