@@ -10,13 +10,16 @@ title: Projects
 
   <div class="project-grid">
     <article class="project-card">
+      <div class="project-visual project-visual-portfolio">
+        <span class="project-visual-label">Featured</span>
+      </div>
       <div class="card-topline">Featured build</div>
-      <h2>Portfolio Platform</h2>
-      <p>A lightweight Jekyll-based portfolio shaped into a warmer, more intentional personal site with adaptive theming and cleaner structure.</p>
+      <h2>Personal Portfolio</h2>
+      <p>A focused personal space for selected work, writing, and the kind of product-minded engineering I want to keep putting into the world.</p>
       <div class="pill-list compact">
-        <span>Jekyll</span>
-        <span>GitHub Pages</span>
-        <span>CSS</span>
+        <span>Portfolio</span>
+        <span>Writing</span>
+        <span>UI polish</span>
       </div>
       <div class="project-links-inline">
         <a href="https://github.com/Thairux/.me" target="_blank" rel="noopener noreferrer">Repository</a>
@@ -24,6 +27,9 @@ title: Projects
     </article>
 
     <article class="project-card">
+      <div class="project-visual project-visual-experiments">
+        <span class="project-visual-label">Lab</span>
+      </div>
       <div class="card-topline">Open source</div>
       <h2>Developer Experiments</h2>
       <p>A growing set of prototypes and ideas focused on automation, smoother workflows, and making technical tasks easier to reason about.</p>
@@ -38,6 +44,9 @@ title: Projects
     </article>
 
     <article class="project-card">
+      <div class="project-visual project-visual-notes">
+        <span class="project-visual-label">Writing</span>
+      </div>
       <div class="card-topline">In progress</div>
       <h2>Case Studies & Notes</h2>
       <p>More detailed breakdowns are coming soon, including the choices behind builds, lessons learned, and how each project evolved over time.</p>
