@@ -12,7 +12,7 @@ technologies:
   - "Supabase"
   - "Tailwind CSS"
 github: "https://github.com/Thairux/hosq"
-demo: "https://thairu.github.io/hosq"
+demo: "https://thairux.github.io/hosq"
 forked_from: "https://github.com/pmuigai-sys/hosq"
 ---
 
