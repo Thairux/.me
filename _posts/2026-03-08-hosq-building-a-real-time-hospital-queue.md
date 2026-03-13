@@ -29,7 +29,7 @@ The project uses TypeScript on the frontend, Supabase for backend capabilities a
 
 ## Repository and live links
 
-- Live site: [thairu.github.io/hosq](https://thairu.github.io/hosq)
+- Live site: [thairux.github.io/hosq](https://thairux.github.io/hosq)
 - Repository: [Thairux/hosq](https://github.com/Thairux/hosq)
 - Original fork source: [pmuigai-sys/hosq](https://github.com/pmuigai-sys/hosq)
 
