@@ -1,68 +1,63 @@
-# Portfolio Website
+# Thairux Portfolio
 
-A modern, minimalist portfolio website built with Jekyll and hosted on GitHub Pages.
+![Status](https://img.shields.io/badge/status-active-7a5c45)
+![Jekyll](https://img.shields.io/badge/jekyll-4.3-8b5d45)
+![GitHub Pages](https://img.shields.io/badge/deploy-github%20pages-a06b4f)
 
-## Features
+A Jekyll-based personal portfolio for showcasing projects, writing, and product-minded engineering work.
 
-- Clean, minimalist design
-- Fully responsive layout
-- Sections: About, Projects, Skills, Experience, Education, Contact, Blog
-- Easy to customize and maintain
-- GitHub Pages compatible
+## Quick Start
 
-## Getting Started
-
-### Prerequisites
-
-- Ruby 2.7 or higher
-- Bundler gem
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Thairux/thairux.github.io.git
-cd thairux.github.io
-```
-
-2. Install dependencies:
 ```bash
 bundle install
-```
-
-3. Run the local server:
-```bash
 bundle exec jekyll serve
+bundle exec jekyll build
 ```
 
-4. Open your browser and visit `http://localhost:4000`
+## Project Status
 
-## Customization
+- Live portfolio structure is in place.
+- Projects and blog collections are active.
+- GitHub Copilot CLI content workflow is now supported through a local MCP server.
 
-### Site Configuration
+## Documentation
 
-Edit `_config.yml` to customize:
-- Site title and description
-- Author information
-- Social media links
-- Navigation menu
+- `docs/architecture.md`
+- `docs/workflows.md`
+- `docs/conventions.md`
+- `docs/integrations.md`
+- `docs/error-handling-and-logging.md`
+- `docs/copilot-mcp-plan.md`
 
-### Content
+## Repository Structure
 
-- **Projects**: Add project files in `_projects/` directory
-- **Blog Posts**: Add blog posts in `_posts/` directory
-- **Skills**: Edit `_data/skills.yml`
-- **Experience**: Edit `_data/experience.yml`
-- **Education**: Edit `_data/education.yml`
+```text
+.
+├── _posts/      # Blog posts
+├── _projects/   # Project case studies
+├── _layouts/    # Shared layouts
+├── assets/      # CSS, JS, and images
+├── blog/        # Blog landing page
+├── docs/        # Project and integration docs
+└── mcp/         # Copilot MCP server and setup scripts
+```
 
-### Styling
+## GitHub Copilot CLI Integration
 
-Modify `assets/css/main.css` to change colors, fonts, and layout.
+Install the local MCP server entry:
 
-## Deployment
+```bash
+python mcp/install_copilot_mcp.py
+```
 
-This site is configured for GitHub Pages. Simply push your changes to the `main` branch, and GitHub Pages will automatically build and deploy your site.
+Then start Copilot CLI from the repository root and ask it to use the `portfolioSite` MCP server for content changes.
 
-## License
+## Contributors
 
-© 2024 Thairux. All rights reserved.
+- Thairux
+
+## Roadmap
+
+- Add richer content automation for homepage highlight updates.
+- Add local build prerequisites to streamline first-time setup.
+- Add CI-based Jekyll verification for portfolio content changes.

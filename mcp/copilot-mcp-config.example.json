@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${FIGMA_OAUTH_TOKEN}",
+        "X-Figma-Region": "us-east-1"
+      }
+    },
+    "portfolioSite": {
+      "type": "local",
+      "command": "python",
+      "timeout": 16000,
+      "args": [
+        "F:/path/to/thairux.github.io_portfolio/mcp/portfolio_site_mcp_server.py",
+        "--repo",
+        "F:/path/to/thairux.github.io_portfolio"
+      ]
+    }
+  }
+}
